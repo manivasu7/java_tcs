@@ -1,0 +1,237 @@
+{
+	"info": {
+		"_postman_id": "83a489ee-c1fc-4aec-a6ce-aaa108d5863d",
+		"name": "Bank Account - wboada",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAllBankAccount",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIyMmYwOWU3MC00MzU5LTQ0ZjctOTYyYS1lZTRjZjRkYTYxYWQiLCJzdWIiOiJ3Ym9hZGEiLCJyb2xlIjoiWzIwMjJdIiwiaWF0IjoxNjQ4NzM0MzEwLCJleHAiOjE2NDg4MjA3MTB9.pZqlTiT31p0ZEoK23AN09H4DgCFV26_eKguw2321-bwMTGRcEnEqIqz_FbeEgxT1qQobzs9DpEJoGO3gB32dwQ",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:666/api/v1/public/getAllBankAccount",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"api",
+						"v1",
+						"public",
+						"getAllBankAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllInvoices",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIyMmYwOWU3MC00MzU5LTQ0ZjctOTYyYS1lZTRjZjRkYTYxYWQiLCJzdWIiOiJ3Ym9hZGEiLCJyb2xlIjoiWzIwMjJdIiwiaWF0IjoxNjQ4NzM0MzEwLCJleHAiOjE2NDg4MjA3MTB9.pZqlTiT31p0ZEoK23AN09H4DgCFV26_eKguw2321-bwMTGRcEnEqIqz_FbeEgxT1qQobzs9DpEJoGO3gB32dwQ",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:666/api/v1/public/getAllBankAccountMovements",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"api",
+						"v1",
+						"public",
+						"getAllBankAccountMovements"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllClientsIncludeInvoices",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIyMmYwOWU3MC00MzU5LTQ0ZjctOTYyYS1lZTRjZjRkYTYxYWQiLCJzdWIiOiJ3Ym9hZGEiLCJyb2xlIjoiWzIwMjJdIiwiaWF0IjoxNjQ4NzM0MzEwLCJleHAiOjE2NDg4MjA3MTB9.pZqlTiT31p0ZEoK23AN09H4DgCFV26_eKguw2321-bwMTGRcEnEqIqz_FbeEgxT1qQobzs9DpEJoGO3gB32dwQ",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:666/api/v1/public/getAllClientsIncludeInvoices",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"api",
+						"v1",
+						"public",
+						"getAllClientsIncludeInvoices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save BankAccountController",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJiMDk1OTZhNy0xNTU1LTQ4ODctYTBkYi04MTc2OTBlMjk3MTEiLCJzdWIiOiJ3Ym9hZGEiLCJyb2xlIjoiWzIwMjJdIiwiaWF0IjoxNjQ4Nzc1MDg5LCJleHAiOjE2NDg4NjE0ODl9.ea3UMFg7SAEruqFZUD0HxD8OrJOK5D7rj5qQ3ImzlUpEaeqDhUd6Pw7csjGbOYu_G-Lm2Kd-4UWbGNHFHdLD8g",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numeroCuenta\": \"1234567890\",\r\n    \"fechaApertura\": \"2022-04-01\",\r\n    \"saldoContable\": 1000,\r\n    \"estado\": \"Activo\",\r\n    \"propietario\": \"Wilson Boada\",\r\n    \"tipoCuenta\": \"Ahorros\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:666/api/v1/public/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"api",
+						"v1",
+						"public",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveBankAccountMovements",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJiMDk1OTZhNy0xNTU1LTQ4ODctYTBkYi04MTc2OTBlMjk3MTEiLCJzdWIiOiJ3Ym9hZGEiLCJyb2xlIjoiWzIwMjJdIiwiaWF0IjoxNjQ4Nzc1MDg5LCJleHAiOjE2NDg4NjE0ODl9.ea3UMFg7SAEruqFZUD0HxD8OrJOK5D7rj5qQ3ImzlUpEaeqDhUd6Pw7csjGbOYu_G-Lm2Kd-4UWbGNHFHdLD8g",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"tipoTransaccion\": \"Credito\",\r\n    \"numeroTransaccion\": 1001,\r\n    \"descripcion\": \"Transferencia directa\",\r\n    \"beneficiarioOrdenante\": \"Wilson Boada\",\r\n    \"monto\": 120,\r\n    \"fecha\": \"2022-04-01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:666/api/v1/public/saveBankAccountMovements",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"api",
+						"v1",
+						"public",
+						"saveBankAccountMovements"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update BankAccountController",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJiMDk1OTZhNy0xNTU1LTQ4ODctYTBkYi04MTc2OTBlMjk3MTEiLCJzdWIiOiJ3Ym9hZGEiLCJyb2xlIjoiWzIwMjJdIiwiaWF0IjoxNjQ4Nzc1MDg5LCJleHAiOjE2NDg4NjE0ODl9.ea3UMFg7SAEruqFZUD0HxD8OrJOK5D7rj5qQ3ImzlUpEaeqDhUd6Pw7csjGbOYu_G-Lm2Kd-4UWbGNHFHdLD8g",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numeroCuenta\": \"1234567890\",\r\n    \"fechaApertura\": \"2022-04-01\",\r\n    \"saldoContable\": 2000,\r\n    \"estado\": \"Activo\",\r\n    \"propietario\": \"Wilson F. Boada S.\",\r\n    \"tipoCuenta\": \"Ahorros\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:666/api/v1/public/update/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"api",
+						"v1",
+						"public",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete BankAccountController",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJiMDk1OTZhNy0xNTU1LTQ4ODctYTBkYi04MTc2OTBlMjk3MTEiLCJzdWIiOiJ3Ym9hZGEiLCJyb2xlIjoiWzIwMjJdIiwiaWF0IjoxNjQ4Nzc1MDg5LCJleHAiOjE2NDg4NjE0ODl9.ea3UMFg7SAEruqFZUD0HxD8OrJOK5D7rj5qQ3ImzlUpEaeqDhUd6Pw7csjGbOYu_G-Lm2Kd-4UWbGNHFHdLD8g",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:666/api/v1/secure/delete/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"api",
+						"v1",
+						"secure",
+						"delete",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
