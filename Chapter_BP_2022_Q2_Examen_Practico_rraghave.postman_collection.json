@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "82353681-23e7-4d1c-b2db-0ac49633b67d",
+		"name": "Chapter_BP_2022_Q2_Examen_Practico_rraghave",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "MovimientosApp",
+			"item": [
+				{
+					"name": "HealthCheck",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/HealthCheck",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"HealthCheck"
+							]
+						},
+						"description": "Para verificar si el API esta arriba."
+					},
+					"response": []
+				},
+				{
+					"name": "Cuentas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/cuentas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ActualizarCuenta",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombrededliente\": \"ragha\",\n    \"numerodecuenta\": 22232323,\n    \"fechaunirse\": \"2002-02-07T05:00:00.000+00:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cuentas/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarMovimientos",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/movimientos/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movimientos",
+								"3"
+							]
+						},
+						"description": "Ruta para eliminar movimientos con id"
+					},
+					"response": []
+				},
+				{
+					"name": "CrearCuenta",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"nombrededliente\": \"anubalkhaj\",\n        \"numerodecuenta\": 5443543,\n        \"fechaunirse\": \"2022-05-07T05:00:00.000+00:00\",\n        \"movimientos\": [\n            {\n                \"desdecuenta\": 5443543,\n                \"hastacuenta\": 324324442,\n                \"valor\": 100.03,\n                \"fecha\": \"2022-02-07\"\n            },\n            {\n                \"desdecuenta\": 223232323,\n                \"hastacuenta\": 5443543,\n                \"valor\": 1030.03,\n                \"fecha\": \"2022-02-07\"\n            }\n        ]\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cuentas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas"
+							]
+						},
+						"description": "Ruta para crear cuenta con moviemientos"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
