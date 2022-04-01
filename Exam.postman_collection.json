@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "ea5b2a6e-1b11-46ce-ace3-7d51ec2a1d79",
+		"name": "Exam",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createAccount",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accountNumber\": \"123572675756\",\r\n    \"accountType\": \"AHO\",\r\n    \"totalAmount\": \"12.24\",\r\n    \"currency\": \"EUR\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/accounts",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateAccount",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/accounts",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createMovements",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\":\"mi primer mivmiento\",\r\n    \"journal\": \"123214\",\r\n    \"amount\": \"1.24\",\r\n    \"movementType\": \"Debit\",\r\n    \"account\":{\r\n        \"acountId\": 1,\r\n        \"accountNumber\": \"123572675756\",\r\n        \"accountType\": \"AHO\",\r\n        \"totalAmount\": \"12.24\",\r\n        \"currency\": \"EUR\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/acounts/movements",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"acounts",
+						"movements"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listMovements",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\":\"mi primer mivmiento\",\r\n    \"journal\": \"123214\",\r\n    \"amount\": \"1.24\",\r\n    \"movementType\": \"Debit\",\r\n    \"account\":{\r\n        \"acountId\": 1,\r\n        \"accountNumber\": \"123572675756\",\r\n        \"accountType\": \"AHO\",\r\n        \"totalAmount\": \"12.24\",\r\n        \"currency\": \"EUR\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/acounts/movements",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"acounts",
+						"movements"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteMovement",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\":\"mi primer mivmiento\",\r\n    \"journal\": \"123214\",\r\n    \"amount\": \"1.24\",\r\n    \"movementType\": \"Debit\",\r\n    \"account\":{\r\n        \"acountId\": 1,\r\n        \"accountNumber\": \"123572675756\",\r\n        \"accountType\": \"AHO\",\r\n        \"totalAmount\": \"12.24\",\r\n        \"currency\": \"EUR\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/acounts/movements",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"acounts",
+						"movements"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
