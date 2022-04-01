@@ -15,4 +15,6 @@ public interface MovementService {
 	
 	public  List<MovementEntity> getAllAccountsMovements();
 
+	public MovementEntity saveTutorial(MovementEntity movement);
+
 }

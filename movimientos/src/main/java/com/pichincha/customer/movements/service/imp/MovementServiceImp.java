@@ -12,6 +12,7 @@ import com.pichincha.customer.movements.entity.MovementEntity;
 import com.pichincha.customer.movements.repository.MovementRepository;
 import com.pichincha.customer.movements.service.MovementService;
 
+
 /**
  * @author jjoseph
  *
@@ -26,6 +27,11 @@ public class MovementServiceImp implements MovementService {
 	public List<MovementEntity> getAllAccountsMovements() {
 		List<MovementEntity> movement = (List<MovementEntity>) movementRepository.findAll();
 		
+		return movement;
+	}
+	
+	public MovementEntity saveTutorial(MovementEntity movements) {
+		MovementEntity movement = movementRepository.save(new MovementEntity());
 		return movement;
 	}
 
