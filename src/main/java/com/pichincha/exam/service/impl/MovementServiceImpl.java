@@ -31,9 +31,10 @@ public class MovementServiceImpl implements MovementService {
 
 	@Override
 	public List<MovementDto> findMovement(String accountNumber) {
-//		List<Movement> movimientos = movementRepository.findByAccountNumber(accountNumber);
-//		return movimientos.stream().map(m -> m.toDto()).collect(Collectors.toList());
-		return null;
+		List<Movement> movimientos = movementRepository.findByAccountNumber(accountNumber);
+		movimientos.stream().forEach(m -> m.setAccount(null));
+		return movimientos.stream().map(m -> m.toDto()).collect(Collectors.toList());
+//		return null;
 	}
 
 }

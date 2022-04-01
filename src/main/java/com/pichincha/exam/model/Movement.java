@@ -38,14 +38,16 @@ public class Movement {
 	private Account account;
 
 	public MovementDto toDto() {
-		AccountDto account = null;
-		if (this.account != null) {
-			account = this.account.toDto();
-		}
 		NumberFormat usdCostFormat = NumberFormat.getCurrencyInstance(Locale.US);
 		usdCostFormat.setMinimumFractionDigits(2);
 		usdCostFormat.setMaximumFractionDigits(2);
-		usdCostFormat.setCurrency(account.getCurrency());
+		AccountDto account = null;
+		if (this.account != null) {
+			account = this.account.toDto();
+			usdCostFormat.setCurrency(account.getCurrency());
+		}
+		
+		
 		
 		return new MovementDto(movementId, description, journal, usdCostFormat.format(amount.doubleValue()),
 				movementType, account);
