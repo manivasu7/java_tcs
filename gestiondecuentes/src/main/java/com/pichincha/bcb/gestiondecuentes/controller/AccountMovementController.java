@@ -1,4 +1,4 @@
-package com.pichincha.fcpp.gestiondecuentes.controller;
+package com.pichincha.bcb.gestiondecuentes.controller;
 
 import java.util.List;
 
@@ -13,13 +13,13 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.pichincha.fcpp.gestiondecuentes.dto.AccountDto;
-import com.pichincha.fcpp.gestiondecuentes.entity.AccountEntity;
-import com.pichincha.fcpp.gestiondecuentes.service.AccountService;
+import com.pichincha.bcb.gestiondecuentes.dto.AccountDto;
+import com.pichincha.bcb.gestiondecuentes.entity.AccountEntity;
+import com.pichincha.bcb.gestiondecuentes.service.AccountService;
 
 @Controller
 @RequestMapping("/account")
-public class AccountController {
+public class AccountMovementController {
 	
 	@Autowired
 	private AccountService accountService;

@@ -1,4 +1,4 @@
-package com.pichincha.fcpp.gestiondecuentes.service.impl;
+package com.pichincha.bcb.gestiondecuentes.service.impl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,10 +6,10 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.pichincha.fcpp.gestiondecuentes.dto.AccountDto;
-import com.pichincha.fcpp.gestiondecuentes.entity.AccountEntity;
-import com.pichincha.fcpp.gestiondecuentes.repository.AccountRepository;
-import com.pichincha.fcpp.gestiondecuentes.service.AccountService;
+import com.pichincha.bcb.gestiondecuentes.dto.AccountDto;
+import com.pichincha.bcb.gestiondecuentes.entity.AccountEntity;
+import com.pichincha.bcb.gestiondecuentes.repository.AccountRepository;
+import com.pichincha.bcb.gestiondecuentes.service.AccountService;
 
 @Service
 public class AccountServiceImpl implements AccountService {

@@ -1,4 +1,4 @@
-package com.pichincha.fcpp.gestiondecuentes;
+package com.pichincha.bcb.gestiondecuentes;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

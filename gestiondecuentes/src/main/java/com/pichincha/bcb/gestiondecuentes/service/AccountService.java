@@ -1,9 +1,9 @@
-package com.pichincha.fcpp.gestiondecuentes.service;
+package com.pichincha.bcb.gestiondecuentes.service;
 
 import java.util.List;
 
-import com.pichincha.fcpp.gestiondecuentes.dto.AccountDto;
-import com.pichincha.fcpp.gestiondecuentes.entity.AccountEntity;
+import com.pichincha.bcb.gestiondecuentes.dto.AccountDto;
+import com.pichincha.bcb.gestiondecuentes.entity.AccountEntity;
 
 public interface AccountService {
 

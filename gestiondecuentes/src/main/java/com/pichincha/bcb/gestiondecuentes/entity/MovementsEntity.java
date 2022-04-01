@@ -1,4 +1,4 @@
-package com.pichincha.fcpp.gestiondecuentes.entity;
+package com.pichincha.bcb.gestiondecuentes.entity;
 
 import java.util.List;
 
@@ -12,7 +12,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.pichincha.fcpp.gestiondecuentes.dto.MovementsDto;
+import com.pichincha.bcb.gestiondecuentes.dto.MovementsDto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

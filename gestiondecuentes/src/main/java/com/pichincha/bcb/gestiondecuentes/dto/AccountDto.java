@@ -1,4 +1,4 @@
-package com.pichincha.fcpp.gestiondecuentes.dto;
+package com.pichincha.bcb.gestiondecuentes.dto;
 
 
 
@@ -6,8 +6,8 @@ import java.util.List;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.pichincha.fcpp.gestiondecuentes.entity.AccountEntity;
-import com.pichincha.fcpp.gestiondecuentes.entity.MovementsEntity;
+import com.pichincha.bcb.gestiondecuentes.entity.AccountEntity;
+import com.pichincha.bcb.gestiondecuentes.entity.MovementsEntity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
