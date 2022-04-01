@@ -1,0 +1,14 @@
+package com.pichincha.fcpp.gestiondecuentes.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.pichincha.fcpp.gestiondecuentes.service.AccountService;
+
+@Controller
+@RequestMapping("/movement")
+public class MovementController {
+	
+
+}

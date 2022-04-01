@@ -1,0 +1,26 @@
+package com.pichincha.fcpp.gestiondecuentes.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Entity
+@Table(name = "TBL_MOVIMIENTOS")
+@Getter
+@Setter
+@NoArgsConstructor
+public class MovimientosEntity {
+	
+	private Integer movimientoId;
+	
+	private Integer sourceCuenta;
+	
+	private Integer destinationCuenta;
+	
+	private Double amount;
+	
+
+}

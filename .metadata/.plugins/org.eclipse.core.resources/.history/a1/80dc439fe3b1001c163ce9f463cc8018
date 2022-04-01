@@ -1,0 +1,40 @@
+package com.pichincha.fcpp.gestiondecuentes.dto;
+
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.pichincha.fcpp.gestiondecuentes.entity.AccountEntity;
+import com.pichincha.fcpp.gestiondecuentes.entity.MovementsEntity;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+
+public class MovementsDto {
+	
+	private Integer movementId;
+
+	private AccountEntity sourceAccountDetalles;
+
+	private AccountEntity destinationAccountDetalles;
+	
+	private String movementDescription;
+
+	private Double movementAmount;
+	
+	public MovementsEntity getAsTo() {
+		return new MovementsEntity(
+				this.movementId,
+				this.sourceAccountDetalles, 
+				this.destinationAccountDetalles, 
+				this.movementDescription, 
+				this.movementAmount 
+				);
+	}
+
+}

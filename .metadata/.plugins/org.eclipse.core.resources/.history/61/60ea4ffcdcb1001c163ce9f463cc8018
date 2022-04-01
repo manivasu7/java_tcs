@@ -1,0 +1,25 @@
+package com.pichincha.fcpp.gestiondecuentes.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Entity
+@Table(name = "TBL_CUENTAS")
+@Getter
+@Setter
+@NoArgsConstructor
+public class CuentaEntity {
+
+	private Integer cuentaId;
+	
+	private String numeroCuenta;
+	
+	private String bancoCuenta;
+	
+	private String tipoCuenta;
+	
+}

@@ -1,0 +1,35 @@
+package com.pichincha.fcpp.gestiondecuentes.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.pichincha.fcpp.gestiondecuentes.dto.AccountDto;
+import com.pichincha.fcpp.gestiondecuentes.entity.AccountEntity;
+import com.pichincha.fcpp.gestiondecuentes.repository.AccountRepository;
+import com.pichincha.fcpp.gestiondecuentes.service.AccountService;
+
+@Service
+public class AccountServiceImpl implements AccountService{
+
+	@Autowired
+	private AccountRepository accountRepository;
+	
+	@Override
+	public List<AccountDto> getAllAccounts() {
+		List<AccountEntity> accountEntities = (List<AccountEntity>) accountRepository.findAll();
+		
+		List<CustomerDto> customerDtos = new ArrayList<>();
+
+		customerEntities.stream().forEach((client) -> {
+			customerDtos.add(client.getAsTo());
+		});
+
+		return customerDtos;
+
+		
+		return accountEntities;
+	}
+
+}

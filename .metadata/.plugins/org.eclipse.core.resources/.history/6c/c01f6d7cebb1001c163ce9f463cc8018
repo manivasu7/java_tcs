@@ -1,0 +1,7 @@
+package com.pichincha.fcpp.gestiondecuentes.service.impl;
+
+import com.pichincha.fcpp.gestiondecuentes.service.MovementService;
+
+public class MovementServiceImpl implements MovementService{
+
+}

@@ -1,0 +1,11 @@
+package com.pichincha.fcpp.gestiondecuentes.service;
+
+import com.pichincha.fcpp.gestiondecuentes.entity.AccountEntity;
+import com.pichincha.fcpp.gestiondecuentes.entity.MovementsEntity;
+
+public interface MovementService {
+
+	AccountEntity createMovement(MovementsEntity movementsEntity);
+
+	
+}

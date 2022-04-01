@@ -1,0 +1,5 @@
+package com.pichincha.fcpp.gestiondecuentes.dto;
+
+public class AccountDto {
+
+}
