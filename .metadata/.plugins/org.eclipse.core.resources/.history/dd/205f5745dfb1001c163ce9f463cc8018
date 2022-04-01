@@ -1,0 +1,7 @@
+package com.pichincha.fcpp.gestiondecuentes.repository;
+
+import com.pichincha.fcpp.gestiondecuentes.entity.AccountEntity;
+
+public class AccountRepository  extends CrudRepository<AccountEntity, Integer> {
+
+}

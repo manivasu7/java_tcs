@@ -1,0 +1,40 @@
+package com.pichincha.fcpp.gestiondecuentes.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.pichincha.fcpp.gestiondecuentes.entity.AccountEntity;
+import com.pichincha.fcpp.gestiondecuentes.entity.MovementsEntity;
+import com.pichincha.fcpp.gestiondecuentes.repository.MovementRepository;
+import com.pichincha.fcpp.gestiondecuentes.service.MovementService;
+
+public class MovementServiceImpl implements MovementService {
+
+	@Autowired
+	private MovementRepository movementRepository;
+
+	@Override
+	public MovementsEntity createMovement(MovementsEntity movementsEntity) {
+
+		MovementsEntity movementsEntityAfter = movementRepository.save(movementsEntity);
+
+		return movementsEntityAfter;
+	}
+
+	@Override
+	public MovementsEntity deleteMovement(Integer movementId) {
+
+		MovementsEntity movementsEntityDb = movementRepository.findById(movementId)
+
+		if (accountEntityDb == null) {
+			throw new Exception("Account Not Found");
+		}
+
+		accountEntityDb.setAccountNumber(accountEntity.getAccountNumber());
+		accountEntityDb.setAccountBank(accountEntity.getAccountBank());
+		accountEntityDb.setAccountType(accountEntity.getAccountType());
+
+		AccountEntity accountEntityAfter = accountRepository.save(accountEntityDb);
+		return accountEntityAfter;
+	}
+
+}

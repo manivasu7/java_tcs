@@ -1,0 +1,9 @@
+package com.pichincha.fcpp.gestiondecuentes.service;
+
+import com.pichincha.fcpp.gestiondecuentes.entity.AccountEntity;
+
+public interface AccountService {
+
+	public AccountEntity getAccounts();
+	
+}

@@ -1,0 +1,9 @@
+package com.pichincha.fcpp.gestiondecuentes.repository;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.pichincha.fcpp.gestiondecuentes.entity.AccountEntity;
+
+public interface MovementRepository extends CrudRepository<AccountEntity, Integer> {
+
+}

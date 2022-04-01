@@ -1,0 +1,45 @@
+package com.pichincha.fcpp.gestiondecuentes.dto;
+
+
+
+import java.util.List;
+
+import javax.persistence.CascadeType;
+import javax.persistence.FetchType;
+import javax.persistence.OneToMany;
+
+import com.pichincha.fcpp.gestiondecuentes.entity.AccountEntity;
+import com.pichincha.fcpp.gestiondecuentes.entity.MovementsEntity;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class AccountDto {
+	
+	private String accountNumber;
+
+	private String accountType;
+
+	private String accountBank;
+	
+	private List<MovementsEntity> allMovementsWhereSource;
+
+	private List<MovementsEntity> allMovementsWhereDestination;
+	
+	public AccountEntity getAsTo() {
+		return new AccountDto(
+				this.accountNumber, 
+				this.accountType, 
+				this.accountBank, 
+				this.allMovementsWhereSource,
+				this.allMovementsWhereDestination 
+				);
+	}
+
+}

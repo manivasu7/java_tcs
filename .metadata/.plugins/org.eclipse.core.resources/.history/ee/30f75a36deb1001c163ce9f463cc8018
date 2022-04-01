@@ -1,0 +1,47 @@
+package com.pichincha.fcpp.gestiondecuentes.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Entity
+@Table(name = "TBL_MOVIMIENTOS")
+@Getter
+@Setter
+@NoArgsConstructor
+public class MovementsEntity {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "MOVEMENT_ID")
+	private Integer movementId;
+
+	@Column(name = "SOURCE_ACCOUNT")
+	private Integer sourceAccount;
+	
+	@JsonIgnore
+	@ManyToOne
+	@JoinColumn(name = "ID_ELECTRONICO_DETALLES_COMPROBANTES", nullable = false)
+	private ElectronicoDetallesComprobantesEntity idElectronicoDetallesComprobantesDetalles;
+
+
+	@Column(name = "DESTINATION_ACCOUNT")
+	private Integer destinationAccount;
+
+	@Column(name = "MOVEMENT_DESCRIPTION")
+	private String movementDescription;
+
+	@Column(name = "MOVEMENT_AMOUNT")
+	private Double movementAmount;
+
+}

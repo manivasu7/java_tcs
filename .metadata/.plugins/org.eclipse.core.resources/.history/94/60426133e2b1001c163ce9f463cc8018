@@ -1,0 +1,29 @@
+package com.pichincha.fcpp.gestiondecuentes.dto;
+
+import java.util.List;
+
+import javax.persistence.Column;
+
+import com.pichincha.fcpp.gestiondecuentes.entity.MovementsEntity;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class AccountDto {
+	
+	private Integer accountId;
+
+	@Column(name = "ACCOUNT_NUMBER")
+	private String accountNumber;
+
+	@Column(name = "ACCOUNT_TYPE")
+	private String accountType;
+
+	@Column(name = "ACCOUNT_BANK")
+	private String accountBank;
+
+	
+
+}

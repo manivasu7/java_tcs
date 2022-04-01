@@ -1,0 +1,18 @@
+package com.pichincha.fcpp.gestiondecuentes.dto;
+
+
+import com.pichincha.fcpp.gestiondecuentes.entity.AccountEntity;
+
+public class MovementsDto {
+	
+	private Integer movementId;
+
+	private AccountEntity sourceAccountDetalles;
+
+	private AccountEntity destinationAccountDetalles;
+	
+	private String movementDescription;
+
+	private Double movementAmount;
+
+}
