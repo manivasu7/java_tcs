@@ -15,14 +15,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.eddu.java_tcs1.model.Account;
-import com.eddu.java_tcs1.services.AccountService;
+import com.eddu.java_tcs1.services.Impl.AccountServiceImpl;
 
 @RestController
 @RequestMapping("/api/v1/account")
 public class AccountController {
 
 	@Autowired
-	AccountService accountService;
+	AccountServiceImpl accountService;
 	
 	@GetMapping("getAccounts")
 	private List<Account> getAllAccounts(){
